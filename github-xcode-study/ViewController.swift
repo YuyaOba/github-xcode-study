@@ -1,20 +1,30 @@
-//
-//  ViewController.swift
-//  github-xcode-study
-//
-//  Created by 大場勇弥 on 2019/12/10.
-//  Copyright © 2019 大場勇弥. All rights reserved.
-//
+
+
+
+
+
+
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    //スーパークラスUIViewControllerを継承したclass ViewController
+    
+    @IBOutlet weak var label: UILabel!
+    //   プロパティの宣言
+    
+    @IBAction func sayHello(_ sender: Any) {
+        //   メゾットの宣言
+        label.text = "こんにちは"
+        //
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
 }
+
 
